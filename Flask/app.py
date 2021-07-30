@@ -4,7 +4,7 @@ import tensorflow as tf
 from tensorflow.keras.models import load_model #we are loading our model from keras
 
 app = Flask(__name__) #our flask app
-model = load_model('crude_oil.h5',) #loading the model in the flask app
+model = load_model('Crude.h5',) #loading the model in the flask app
 
 @app.route('/') #rendering html template
 def home() :
